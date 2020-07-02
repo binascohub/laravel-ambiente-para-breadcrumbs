@@ -19,4 +19,4 @@ Route::get('/continent/{name}', ['as' => 'continent', 'uses' => 'MainController@
 
 Route::get('/country/{name}', ['as' => 'country', 'uses' => 'MainController@country']);
 
-Route::get('/city', ['as' => 'city', 'uses' => 'MainController@city']);
+Route::get('/city/{name}', ['as' => 'city', 'uses' => 'MainController@city']);

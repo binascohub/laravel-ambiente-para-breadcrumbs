@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Continent;
 use App\Models\Country;
-use Illuminate\Http\Request;
+use App\Models\City;
 
 class MainController extends Controller
 {
@@ -29,7 +29,7 @@ class MainController extends Controller
 
     public function city($name)
     {
-        $city = Country::where('name',$name)->first();
+        $city = City::where('name',$name)->first();
 
         return view('city',compact('city'));
     }
